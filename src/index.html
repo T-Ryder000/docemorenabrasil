@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- area catalog -->
+  <link rel="stylesheet" href="./static/css/carrousel-category.css">
+  <link rel="stylesheet" href="./static/css/products.css">
 </head>
 <body class="bg-black" >
+
+  <header class="bg-red-700 text-center p-5">
+    <a href="" class=" font-extrabold text-white">Voltar ao Home <i class="fa-solid fa-house"></i></a>
+  </header>
 
   <div id="body">
     <main id="main">
@@ -50,8 +58,8 @@
         <img class="rounded-full w-16 h-16 md:w-16 md:h-16 mx-auto mb-10" src="./static/images/logo.png" alt="logo da doce morena">
         <div >
           <!-- Introdução -->
-          <div class="text-center mb-10">
-            <h2 class="text-4xl text-white font-bold mb-10 text-yellow-500 ">Navegue pelo Nosso Mundo</h2>
+          <div class="text-center mb-10 p-2">
+            <h2 class="text-4xl font-bold mb-10 text-yellow-500 ">Navegue pelo Nosso Mundo</h2>
             <p class="text-xl text-gray-300 px-3">
               Explore nossos produtos, conheça a história por trás de cada receita<br> e descubra como podemos juntos criar momentos especiais.
             </p>
@@ -60,7 +68,7 @@
           <!-- Cards de Produtos e Tortas -->
           <div class="flex flex-wrap gap-10 px-10 justify-evenly mx-auto mb-16 " style="max-width: 1100px;">
             <!-- Card Produtos -->
-            <div class="flex flex-col items-center gap-4 lg:w-60 w-full">
+            <div class="flex flex-col items-center gap-4 lg:w-60 w-full" id="btn-catalog">
               <div class="w-full h-44 bg-white rounded-full shadow-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
                 <img src="./static/images/produtos.PNG" alt="Produtos" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity">
               </div>
@@ -95,7 +103,7 @@
       
         <div class="max-w-4xl lg:max-w-5xl mx-auto flex flex-col lg:flex-row lg:items-start items-center gap-8 px-3 my-16 text-center lg:text-left mt-24">
           <div class="lg:w-1/2 h-full flex flex-col justify-between">
-            <p class="text-4xl text-white font-semibold tracking-wide mt-5  text-yellow-500">Conheça nossa história</p>
+            <p class="text-4xl  font-semibold tracking-wide mt-5  text-yellow-500">Conheça nossa história</p>
             <p class="text-xl text-gray-300 mt-3">
               Desde o primeiro ingrediente até o último sorriso, nossa história é<br> feita de paixão pela doçura da vida.
             </p>
@@ -112,7 +120,7 @@
         <div class="max-w-4xl lg:max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 px-3 my-16 mt-24">
           <!-- Seção de Texto -->
           <div class="lg:w-1/2">
-            <h3 class="text-4xl text-white font-bold mb-5 text-center lg:text-left  text-yellow-500">Sugestões</h3>
+            <h3 class="text-4xl  font-bold mb-5 text-center lg:text-left  text-yellow-500">Sugestões</h3>
             <p class="text-gray-300 text-lg mb-5 text-center lg:text-left">
               Sua opinião é muito importante para nós. Queremos sempre melhorar e oferecer a melhor experiência possível.
               Envie suas sugestões e nos ajude a evoluir juntos!
@@ -196,6 +204,10 @@
 
   
 <script src="./static/js/index.js" type="module"></script>
+
+
+
+
 
 </body>
 </html>

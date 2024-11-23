@@ -77,10 +77,10 @@ const createPageAbout = ()=>{
     </div>
   
     <div class="flex justify-center flex-wrap gap-10 mt-5">
-      <img src="./static/images/burguer.PNG" alt="Sobre" class="rounded-full object-cover w-full aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-3 w-1/3 lg:w-1/6">
-      <img src="./static/images/cafe.PNG" alt="Sobre" class="rounded-full object-cover w-full aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:-rotate-3 w-1/3 lg:w-1/6">
-      <img src="./static/images/cone.PNG" alt="Sobre" class="rounded-full object-cover w-full aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-6 w-1/3 lg:w-1/6">
-      <img src="./static/images/sucos.PNG" alt="Sobre" class="rounded-full object-cover w-full aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-6 w-1/3 lg:w-1/6">
+      <img src="./static/images/burguer.PNG" alt="Sobre" class="rounded-full object-cover aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-3 w-1/3 lg:w-1/6">
+      <img src="./static/images/cafe.PNG" alt="Sobre" class="rounded-full object-cover aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:-rotate-3 w-1/3 lg:w-1/6">
+      <img src="./static/images/cone.PNG" alt="Sobre" class="rounded-full object-cover aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-6 w-1/3 lg:w-1/6">
+      <img src="./static/images/sucos.PNG" alt="Sobre" class="rounded-full object-cover aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-6 w-1/3 lg:w-1/6">
     </div>
   </div>
   `

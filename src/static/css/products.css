@@ -1,0 +1,98 @@
+
+.catalog-products-list {
+  line-height: 1.5;
+  min-height: 100vh;
+
+  column-count: 3;
+  column-gap: 20px; /* Aumenta o espaçamento entre as colunas */
+  padding: 10px;
+}
+
+.catalog-product-stack {
+  break-inside: avoid; /* Para evitar que os cards se quebrem entre colunas */
+  margin-bottom: 20px; /* Adiciona um espaçamento vertical entre os itens */
+  transition: 0.25s ease;
+  background-color: white;
+}
+
+
+
+
+.catalog-product-card {
+  aspect-ratio: 3 / 2;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+  padding: 10px; 
+}
+
+.catalog-product-body-text {
+  padding: 5% 3% 5% 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.catalog-product-card:hover img.catalog-product-img{
+  transition: all 0.3s;
+  transform: scale(0.95);
+}
+
+
+
+.catalog-product-img {
+  height: 200px; /* Altura fixa */
+  width: 100%; /* Largura proporcional ao contêiner */
+  object-fit: cover; /* Preenche o espaço sem distorção */
+}
+
+
+
+
+
+.catalog-product-body {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+
+
+.catalog-product-card-title{
+
+  font-size: 1.2rem;
+  margin-bottom: 8px; 
+  font-weight: bolder;
+}
+
+.catalog-product-card-price{
+  font-size: 1rem;
+}
+
+
+.catalog-product-tag {
+  border-bottom: 1px dotted #000; 
+  padding-bottom: 2px; 
+}
+
+.catalog-btn {
+  display: block;
+  width: 80%; /* Força o botão a ocupar toda a largura do card */
+  text-align: center;
+}
+
+
+@media (max-width: 768px){
+  .catalog-products-list {
+    column-count: 2;
+  }
+
+  .catalog-product-img {
+    height: 150px; /* Ajusta altura para telas menores */
+  }
+
+
+}
