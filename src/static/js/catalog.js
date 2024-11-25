@@ -86,7 +86,7 @@ const createPageCatalog = ()=>{
                 </div>
             </a>
             <div class="mt-2">
-                <a href="#" class="catalog-btn bg-black w-full mx-auto text-yellow-400 rounded-full font-bold text-sm py-2 hover:bg-yellow-500 hover:text-white transition">Ver Produto</a>
+                <a href="#" id="btn-product" class="catalog-btn bg-black w-full mx-auto text-yellow-400 rounded-full font-bold text-sm py-2 hover:bg-yellow-500 hover:text-white transition">Ver Produto</a>
             </div>
         </div>
     </div>

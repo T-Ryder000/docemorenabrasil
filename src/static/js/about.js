@@ -83,6 +83,11 @@ const createPageAbout = ()=>{
       <img src="./static/images/sucos.PNG" alt="Sobre" class="rounded-full object-cover aspect-square shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-6 w-1/3 lg:w-1/6">
     </div>
   </div>
+
+  <section class="w-full mb-16 pb-16">
+    <img class="mx-auto rounded-l-full" src="./static/images/imagemdebaixo2.png" alt="imagem de homem com sorvete">
+  </section>
+    
   `
 
   body.appendChild(main)
