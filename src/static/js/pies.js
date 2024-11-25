@@ -1,24 +1,24 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../output.css" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/category-catalog.css">
-  <link rel="stylesheet" href="../static/css/products-catalog.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body >
+const createPagePies = ()=>{
 
-<main>
-    <section class="banner overflow-hidden relative pb-10 bg-black rounded" style=" min-height: 550px; ">
+
+  console.log("Funcionando!")
+
+  
+  const body = document.querySelector("#body")
+
+  const main = document.createElement('main')
+  main.className = "main-pies pb-16"
+  main.style.backgroundColor = "#F4F6F9"
+
+  main.innerHTML = `
+     <section class="banner overflow-hidden relative pb-10 bg-black rounded" style=" min-height: 550px; ">
 
     <div class="bg-black rounded">
-        <div class="p-24 h-full w-full rounded" style="background-image: url(../static/images/tortafundo.PNG); background-size: cover;  opacity: 0.3;"></div>
+        <div class="p-24 h-full w-full rounded" style="background-image: url(./static/images/tortafundo.PNG); background-size: cover;  opacity: 0.3;"></div>
     </div>
 
     <div class="w-full flex justify-center">
-        <img class="rounded-full w-24 h-24 md:w-24 md:h-24 mx-auto mb-10 absolute top-36" src="../static/images/logo.png" alt="logo da doce morena">
+        <img class="rounded-full w-24 h-24 md:w-24 md:h-24 mx-auto mb-10 absolute top-36" src="./static/images/logo.png" alt="logo da doce morena">
     </div>
 
     <h1 class="text-6xl font-extrabold text-center text-yellow-400 mt-16">Catálogo de Tortas</h1>
@@ -81,20 +81,20 @@
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="bg-white p-4 rounded-lg shadow-lg text-center">
                     
-                    <img src="../static/images/massatradicional.PNG" alt="imagem da massa tradicional">
+                    <img src="./static/images/massatradicional.PNG" alt="imagem da massa tradicional">
                     <h3 class="text-lg font-bold text-gray-800 mt-5">Massa Tradicional</h3>
                     
                 </div>
             
                 <div class="bg-white p-4 rounded-lg shadow-lg text-center">
                     
-                    <img src="../static/images/massachocolate.PNG" alt="imagem da massa de chocolate">
+                    <img src="./static/images/massachocolate.PNG" alt="imagem da massa de chocolate">
                     <h3 class="text-lg font-bold text-gray-800 mt-5">Massa de Chocolate</h3>
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow-lg text-center">
             
-                    <img src="../static/images/massamesclada.PNG" alt="imagem da massa mesclada">
+                    <img src="./static/images/massamesclada.PNG" alt="imagem da massa mesclada">
                     
                     <h3 class="text-lg font-bold text-gray-800 mt-5">Massa Mesclada</h3>
                 </div>
@@ -136,27 +136,27 @@
         <h2 class="text-2xl font-semibold text-gray-950 mb-6">Doces Disponíveis</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/brigadeiro.PNG" alt="imagem do brigadeiro">
+                <img src="./static/images/brigadeiro.PNG" alt="imagem do brigadeiro">
                 <h3 class="text-xl font-bold text-gray-800 mt-5">Brigadeiro</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/beijinho.PNG" alt="imagem do Beijinho">
+                <img src="./static/images/beijinho.PNG" alt="imagem do Beijinho">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Beijinho</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/ninho.PNG" alt="imagem do Ninho">
+                <img src="./static/images/ninho.PNG" alt="imagem do Ninho">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Ninho</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/bem casado.PNG" alt="imagem do Bem-casado">
+                <img src="./static/images/bem casado.PNG" alt="imagem do Bem-casado">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Bem-casado</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/floquinho.PNG" alt="imagem do Floquinho">
+                <img src="./static/images/floquinho.PNG" alt="imagem do Floquinho">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Floquinho</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/ferreiro.PNG" alt="imagem do Ferreiro">
+                <img src="./static/images/ferreiro.PNG" alt="imagem do Ferreiro">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Ferreiro</h3>
             </div>
                 
@@ -167,27 +167,27 @@
         <h2 class="text-2xl font-semibold text-gray-950 mb-6">Adicionais Disponíveis</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/morango.PNG" alt="imagem do Morango">
+                <img src="./static/images/morango.PNG" alt="imagem do Morango">
                 <h3 class="text-xl font-bold text-gray-800 mt-5">Morango</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/uva.PNG" alt="imagem do Uva">
+                <img src="./static/images/uva.PNG" alt="imagem do Uva">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Uva</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/cereja.PNG" alt="imagem do Cereja">
+                <img src="./static/images/cereja.PNG" alt="imagem do Cereja">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Cereja</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/raspasbranco.PNG" alt="imagem do BRaspas de chocolate branco">
+                <img src="./static/images/raspasbranco.PNG" alt="imagem do BRaspas de chocolate branco">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Raspas de chocolate branco</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/raspas.PNG" alt="imagem do Raspas de chocolate">
+                <img src="./static/images/raspas.PNG" alt="imagem do Raspas de chocolate">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Raspas de chocolate</h3>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <img src="../static/images/cascasbombom.PNG" alt="imagem do Cascas de bombom">
+                <img src="./static/images/cascasbombom.PNG" alt="imagem do Cascas de bombom">
                 <h3 class="text-xl text-center font-bold text-gray-800 mt-5">Cascas de bombom</h3>
             </div>
             
@@ -199,33 +199,33 @@
         <h2 class="text-2xl font-semibold text-gray-950 mb-6">Opções de Laço Decorativo</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-                <img src="../static/images/marrom.PNG" alt="Laço Marrom" class="w-full h-40 object-cover rounded-lg mb-2">
+                <img src="./static/images/marrom.PNG" alt="Laço Marrom" class="w-full h-40 object-cover rounded-lg mb-2">
                 <h3 class="text-lg font-bold text-gray-800">Marrom</h3>
                 <p class="text-gray-600"><small>(Tom ilustrativo)</small></p>
             </div>
         
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-                <img src="../static/images/dourado.PNG" alt="Laço Dourado" class="w-full h-40 object-cover rounded-lg mb-2">
+                <img src="./static/images/dourado.PNG" alt="Laço Dourado" class="w-full h-40 object-cover rounded-lg mb-2">
                 <h3 class="text-lg font-bold text-gray-800">Dourado</h3>
                 <p class="text-gray-600"><small>(Tom ilustrativo)</small></p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-                <img src="../static/images/offwhite.PNG" alt="Laço Off white" class="w-full h-40 object-cover rounded-lg mb-2">
+                <img src="./static/images/offwhite.PNG" alt="Laço Off white" class="w-full h-40 object-cover rounded-lg mb-2">
                 <h3 class="text-lg font-bold text-gray-800">Off white</h3>
                 <p class="text-gray-600"><small>(Tom ilustrativo)</small></p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-                <img src="../static/images/rosegold.PNG" alt="Laço Rosê gold" class="w-full h-40 object-cover rounded-lg mb-2">
+                <img src="./static/images/rosegold.PNG" alt="Laço Rosê gold" class="w-full h-40 object-cover rounded-lg mb-2">
                 <h3 class="text-lg font-bold text-gray-800">Rosê gold</h3>
                 <p class="text-gray-600"><small>(Tom ilustrativo)</small></p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-                <img src="../static/images/Perolado.PNG" alt="Laço Perolado" class="w-full h-40 object-cover rounded-lg mb-2">
+                <img src="./static/images/Perolado.PNG" alt="Laço Perolado" class="w-full h-40 object-cover rounded-lg mb-2">
                 <h3 class="text-lg font-bold text-gray-800">Perolado</h3>
                 <p class="text-gray-600"><small>(Tom ilustrativo)</small></p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-                <img src="../static/images/vermelho.PNG" alt="Laço Vermelho" class="w-full h-40 object-cover rounded-lg mb-2">
+                <img src="./static/images/vermelho.PNG" alt="Laço Vermelho" class="w-full h-40 object-cover rounded-lg mb-2">
                 <h3 class="text-lg font-bold text-gray-800">Vermelho</h3>
                 <p class="text-gray-600"><small>(Tom ilustrativo)</small></p>
             </div>
@@ -236,15 +236,15 @@
         <section class="max-w-5xl mx-auto p-3 md:p-8 mt-10">
             <h2 class="text-3xl font-semibold text-gray-950 mb-6">Galeria de Tortas</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <img class="w-full" src="../static/images/torta1.png" alt="Torta 1" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta2.png" alt="Torta 2" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta3.PNG" alt="Torta 3" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta4.png" alt="Torta 4" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta5.png" alt="Torta 5" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta6.PNG" alt="Torta 6" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta7.png" alt="Torta 7" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta8.png" alt="Torta 8" class="rounded-lg shadow-lg">
-                <img class="w-full" src="../static/images/torta9.png" alt="Torta 9" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta1.png" alt="Torta 1" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta2.png" alt="Torta 2" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta3.PNG" alt="Torta 3" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta4.png" alt="Torta 4" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta5.png" alt="Torta 5" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta6.PNG" alt="Torta 6" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta7.png" alt="Torta 7" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta8.png" alt="Torta 8" class="rounded-lg shadow-lg">
+                <img class="w-full" src="./static/images/torta9.png" alt="Torta 9" class="rounded-lg shadow-lg">
             </div>
         </section>
 
@@ -322,58 +322,9 @@
         </section>
         
     </div>
-</main>
+  `
 
-<div class="bg-black w-full">
-    <footer class="text-white p-10 flex flex-col items-center bg-black mx-auto" style="max-width: 1110px;">
-        <div class="container mx-auto flex flex-wrap justify-around gap-8">
-        <div class="flex flex-col  w-full md:w-1/3 lg:w-1/4">
-            <h3 class="text-2xl font-bold mb-4 text-blue-500">Endereço</h3>
-            <p class="text-gray-300 leading-relaxed">
-            R. Manoel Chileno<br>
-            Ginásio, Serrinha - BA<br>
-            48700-000
-            </p>
+  body.appendChild(main)
+}
 
-        </div>
-        
-
-        <div class="flex flex-col  w-full md:w-1/3 lg:w-1/4">
-            <h3 class="text-2xl font-bold  mb-4 text-blue-500">Horários</h3>
-            <p class="text-gray-300 leading-relaxed">
-            ABERTO TODOS OS DIAS<br>
-            Das 10:00 - 22:30 H
-            </p>
-            <br>
-            <h3 class="text-2xl font-bold mb-4 text-blue-500">Contato</h3>
-            <p class="text-gray-300">Telefone: (75) 99208-5485</p>
-        </div>
-        
-
-        <div class="flex flex-col w-full md:w-1/3 lg:w-1/4">
-            <h3 class="text-2xl font-bold mb-4 text-blue-500">Siga-nos</h3>
-            <div class="flex space-x-6">
-            <a href="#" class="text-gray-300 hover:text-white transition text-2xl">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-gray-300 hover:text-white transition text-2xl">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-gray-300 hover:text-white transition text-2xl">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            </div>
-        </div>
-        </div>
-        <div class="border-t border-gray-700 mt-8 w-full text-center py-5">
-        <p class="text-gray-500 text-sm">Copyright &copy; Doce Morena Sorveteria & Snack Lounge. Todos os direitos reservados.
-            CNPJ: 26.495.105/0001-52
-        </p>
-        </div>
-    </footer>
-</div>
-  
-
-<script src="../static/js/sendRequest.js"></script>
-</body>
-</html>
+export default createPagePies

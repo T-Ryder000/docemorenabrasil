@@ -1,13 +1,16 @@
 import createPageAbout from "./about.js";
 import createPageCatalog from "./catalog.js";
 import createPageProduct from "./product.js";
+import createPagePies from "./pies.js";
 import carrousel from "./carrouselCategory.js";
+import sendRequest from "./sendRequest.js";
 
 const body = document.querySelector("#body");
 const main = document.querySelector("#main");
 
 const btnAbout = document.querySelector("#btn-about");
 const btnCatalog = document.querySelector("#btn-catalog");
+const btnPies = document.querySelector("#btn-pies")
 
 // Função para criar página "Sobre"
 btnAbout.addEventListener("click", function () {
@@ -53,4 +56,17 @@ btnCatalog.addEventListener("click", function () {
   } else {
     console.error("Elemento .main-catalog não encontrado!");
   }
+});
+
+
+btnPies.addEventListener("click", function () {
+  createPagePies();
+  main.style.display = "none";
+
+  sendRequest()
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
