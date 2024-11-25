@@ -38,37 +38,37 @@ const createPagePies = ()=>{
         <section class="max-w-5xl mx-auto p-3 md:p-8" bg-white shadow-md rounded-lg">
             <h2 class="text-3xl font-bold text-gray-950 mb-8 text-center">Tabela de Preços</h2>
             <br>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="p-6 bg-blue-500 shadow-sm rounded-lg text-center">
-                    <h3 class="text-2xl font-semibold  mb-4">P</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-blue-500">
+                <div class="p-6 bg-black shadow-sm rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold  mb-4 text-yellow-400">P</h3>
                     <hr>
                     <br>
                     <p class="text-xl font-bold mb-4">R$ 80,00</p>
-                    <p class="text-lg ">Aumento por Sabor Especial:</p>
+                    <p class="text-lg text-yellow-400 mb-4">Aumento por Sabor Especial:</p>
                     <p class="text-xl font-bold ">R$ 5,00</p>
                 </div>
-                <div class="p-6 bg-blue-500 shadow-sm rounded-lg text-center">
-                    <h3 class="text-2xl font-semibold  mb-4">M</h3>
+                <div class="p-6 bg-black shadow-sm rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold  mb-4 text-yellow-400">M</h3>
                     <hr>
                     <br>
                     <p class="text-xl font-bold  mb-4">R$ 120,00</p>
-                    <p class="text-lg ">Aumento por Sabor Especial:</p>
+                    <p class="text-lg text-yellow-400 mb-4">Aumento por Sabor Especial:</p>
                     <p class="text-xl font-bold ">R$ 10,00</p>
                 </div>
-                <div class="p-6 bg-blue-500 shadow-sm rounded-lg text-center">
-                    <h3 class="text-2xl font-semibold  mb-4">G</h3>
+                <div class="p-6 bg-black shadow-sm rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold  mb-4 text-yellow-400">G</h3>
                     <hr>
                     <br>
                     <p class="text-xl font-bold  mb-4">R$ 150,00</p>
-                    <p class="text-lg ">Aumento por Sabor Especial:</p>
+                    <p class="text-lg text-yellow-400 mb-4">Aumento por Sabor Especial:</p>
                     <p class="text-xl font-bold ">R$ 15,00</p>
                 </div>
-                <div class="p-6 bg-blue-500 shadow-sm rounded-lg text-center">
-                    <h3 class="text-2xl font-semibold  mb-4">GG</h3>
+                <div class="p-6 bg-black shadow-sm rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold  mb-4 text-yellow-400">GG</h3>
                     <hr>
                     <br>
                     <p class="text-xl font-bold  mb-4">R$ 190,00</p>
-                    <p class="text-lg ">Aumento por Sabor Especial:</p>
+                    <p class="text-lg text-yellow-400 mb-4">Aumento por Sabor Especial:</p>
                     <p class="text-xl font-bold ">R$ 20,00</p>
                 </div>
             </div>
