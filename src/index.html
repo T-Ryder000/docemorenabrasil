@@ -9,6 +9,10 @@
   <!-- area catalog -->
   <link rel="stylesheet" href="./static/css/category-catalog.css">
   <link rel="stylesheet" href="./static/css/products-catalog.css">
+
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body class="bg-black" >
 
@@ -24,39 +28,46 @@
           class="w-full h-full absolute bg-cover bg-fixed" 
           style="background-image: url(./static/images/fundoBanner.jpg);">
         </div>
-      
+    
         <!-- Conteúdo -->
-        <div class="z-10 absolute top-0 w-full h-full flex flex-col justify-center items-center text-center gap-5 ">
+        <div class="z-10 absolute top-0 w-full h-full flex flex-col justify-center items-center text-center gap-5">
           <!-- Texto principal -->
-          <p class="text-xl md:text-2xl font-semibold text-white leading-tight">
+          <p class="text-xl md:text-2xl font-semibold text-white leading-tight animate__animated animate__fadeInLeft" 
+            data-aos="fade-left" 
+            data-aos-duration="1200" 
+            data-aos-delay="200">
             O MELHOR PONTO<br>TURÍSTICO DE SERRINHA
           </p>
       
-          
-      
           <!-- Título -->
-          <h1 class="text-5xl lg:text-8xl text-white font-extrabold leading-none">
+          <h1 class="text-5xl lg:text-8xl text-white font-extrabold leading-none animate__animated animate__bounceIn" 
+            data-aos="zoom-in" 
+            data-aos-duration="1500">
             DOCE MORENA
           </h1>
       
           <!-- Slogan -->
-          <p class="text-lg md:text-2xl text-white font-semibold leading-tight">
+          <p class="text-lg md:text-2xl text-white font-semibold leading-tight animate__animated animate__fadeInRight" 
+            data-aos="fade-right" 
+            data-aos-duration="1800" 
+            data-aos-delay="300">
             VIVA DOCES MOMENTOS
           </p>
       
-          <!-- Botão -->
-          <a 
-            class="mt-3 px-6 py-3 bg-yellow-300 rounded-lg hover:bg-yellow-900 font-bold transition"
+   
+          <a class="mt-3 px-6 py-3 bg-yellow-300 rounded-lg hover:bg-yellow-900 font-bold shadow transition animate__animated animate__pulse animate__infinite"
             href="#menu" >
             Explore agora
           </a>
         </div>
       </section>
+      
+
 
       <section id="menu" class="container mx-auto py-10 mt-5">
         <!-- Logo -->
         <img class="rounded-full w-16 h-16 md:w-16 md:h-16 mx-auto mb-10" src="./static/images/logo.png" alt="logo da doce morena">
-        <div >
+        <div>
           <!-- Introdução -->
           <div class="text-center mb-10 p-2">
             <h2 class="text-4xl font-bold mb-10 text-yellow-500 ">Navegue pelo Nosso Mundo</h2>
@@ -107,7 +118,7 @@
             <p class="text-xl text-gray-300 mt-3">
               Desde o primeiro ingrediente até o último sorriso, nossa história é<br> feita de paixão pela doçura da vida.
             </p>
-            <button id="btn-about" class="mt-5 px-6 py-3  bg-yellow-300 rounded-lg hover:bg-yellow-900 font-bold transition text-center mx-auto  lg:mx-0"  style="max-width: 150px;">Saiba Mais</button>
+            <button id="btn-about" class="mt-5 px-6 py-3  bg-yellow-300 rounded-lg hover:bg-yellow-900 font-bold transition text-center mx-auto  lg:mx-0 shadow transition animate__animated animate__pulse animate__infinite"  style="max-width: 150px;">Saiba Mais</button>
           </div>
         
           <div class="lg:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
@@ -149,7 +160,7 @@
       </section>
 
 
-      <section class="w-full mb-16">
+      <section class="w-full mb-16 animate__animated animate__fadeInLeft">
         <img class="mx-auto rounded-l-full" src="./static/images/imagemdebaixo.png" alt="imagem de homem com sorvete">
       </section>
       
@@ -210,7 +221,12 @@
 <script src="./static/js/index.js" type="module"></script>
 
 
-
+<script>
+  AOS.init({
+    duration: 1000, // duração da animação em milissegundos
+    once: true,     // anima apenas uma vez ao rolar para baixo
+  });
+</script>
 
 
 </body>

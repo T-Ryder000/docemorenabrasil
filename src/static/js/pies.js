@@ -25,7 +25,7 @@ const createPagePies = ()=>{
     <p class="text-center my-6 text-2xl  text-blue-500 font-bold">Faça agora sua encomenda!</p>
 
     <div class="w-full text-center mt-12">
-        <a class="mt-3 px-6 py-3 bg-yellow-300 rounded-lg hover:bg-yellow-900 font-bold transition"
+        <a class="mt-3 px-6 py-3 bg-yellow-300 rounded-lg hover:bg-yellow-900 font-bold shadow transition animate__animated animate__pulse animate__infinite"
         href="#assemble">
             Monte sua torta agora
         </a>
